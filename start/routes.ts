@@ -24,4 +24,4 @@ Route.get('/', async () => {
   return { hello: 'world' }
 })
 
-Route.resource('coba', 'CobaController').except(['show'])
+Route.resource('coba', 'CobaController').except(['edit', 'create'])
